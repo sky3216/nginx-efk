@@ -10,8 +10,8 @@ echo 'create elastic serach folders to /var/lib/elasticsearch/'
 sudo mkdir -p /var/lib/elasticsearch/
 sudo chown 1000:1000 /var/lib/elasticsearch/
 
-echo 'copy fluent to ./fluent'
+echo 'copy fluent to /fluent'
 sudo cp -rp fluent /
 
-echo 'copy nginx to ./nginx'
+echo 'copy nginx to /nginx'
 sudo cp -rp nginx /
