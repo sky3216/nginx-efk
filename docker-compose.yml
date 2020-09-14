@@ -23,7 +23,7 @@ services:
             options:
                 fluentd-address: localhost:24224
                 fluentd-async-connect: 'true'
-                fluentd-retary-wait: '1s'
+                fluentd-retry-wait: '1s'
                 fluentd-max-retries: '30'
                 tag: ${LOG_OPT_TAG_PREFIX}.efk.elasticsearch
     # kibana 설정
@@ -40,7 +40,7 @@ services:
             options:
                 fluentd-address: localhost:24224
                 fluentd-async-connect: 'true'
-                fluentd-retary-wait: '1s'
+                fluentd-retry-wait: '1s'
                 fluentd-max-retries: '30'
                 tag: ${LOG_OPT_TAG_PREFIX}.efk.kibana
     # fluentd 설정
@@ -83,7 +83,7 @@ services:
             options:
                 fluentd-address: localhost:24224
                 fluentd-async-connect: 'true'
-                fluentd-retary-wait: '1s'
+                fluentd-retry-wait: '1s'
                 fluentd-max-retries: '30'
                 tag: ${LOG_OPT_TAG_PREFIX}.efk.nginx
 networks:
